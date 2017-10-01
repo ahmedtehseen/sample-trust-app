@@ -1,13 +1,11 @@
 import React from 'react';
 import {
-  StyleSheet,
   TouchableHighlight,
-  Dimensions,
   View,
   Text
 } from 'react-native';
-
 import Pdf from 'react-native-pdf';
+import styles from '../styles/PdfScreenStyles';
 
 export class PdfScreen extends React.Component {
   constructor(props) {
@@ -35,28 +33,3 @@ export class PdfScreen extends React.Component {
     )
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
-  },
-  btn: {
-    margin: 5,
-    padding:5,
-    backgroundColor: "blue",
-  },
-  btnDisable: {
-    margin: 5,
-    padding:5,
-    backgroundColor: "gray",
-  },
-  btnText: {
-    color: "#FFF",
-  },
-  pdf: {
-    flex:1,
-    width:Dimensions.get('window').width,
-  }
-});
